@@ -2,8 +2,9 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import {
   Layout,
-  // Drawer,
+  Drawer,
   Header,
+  Navigation,
   Content,
 } from 'react-mdl';
 
@@ -76,6 +77,26 @@ const App = React.createClass({
             >
             <Menu />
           </Header>
+          <Drawer title="Menu">
+            <Navigation>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </Navigation>
+          </Drawer>
           <Content>
             <ImageGallery
               ref={i => this._imageGallery = i}
