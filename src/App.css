@@ -2,4 +2,34 @@
   .mdl-layout__header-row .mdl-navigation {
     display: none;
   }
+  .mdl-layout__header-row {
+    height: 70px;
+  }
+  .bm-overlay {
+    display: none;
+  }
+  .bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+  }
+  .bm-menu-wrap {
+    top: 70px;
+    width: 100% !important;
+  }
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  .mdl-layout__header-row {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .bm-burger-button {
+    display: none;
+  }
 }
