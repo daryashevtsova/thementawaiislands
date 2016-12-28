@@ -1,12 +1,22 @@
+/* common styles */
+.mdl-layout__header {
+  background-color: white;
+}
+.bm-overlay {
+  display: none;
+}
+.content {
+  height: 1000px;
+  border: 10px solid gray;
+}
+
+/* mobile styles */
 @media screen and (max-width: 700px) {
   .mdl-layout-title {
     width: 170px;
   }
   .mdl-layout__header-row .mdl-navigation {
     display: none;
-  }
-  .mdl-layout__header-row {
-    height: 70px;
   }
   .bm-burger-button {
     position: relative;
@@ -24,9 +34,6 @@
   }
   .bm-cross {
     background: #bdc3c7;
-  }
-  .mdl-layout__header-row {
-    padding-right: 40px;
   }
   .bm-menu {
     width: 100%;
@@ -47,6 +54,7 @@
   }
 }
 
+/* large screen styles */
 @media screen and (min-width: 700px) {
   .mdl-layout-title {
     width: 150px;
@@ -57,11 +65,4 @@
   .bm-menu-wrap {
     display: none;
   }
-}
-
-.mdl-layout__header {
-  background-color: white;
-}
-.bm-overlay {
-  display: none;
 }

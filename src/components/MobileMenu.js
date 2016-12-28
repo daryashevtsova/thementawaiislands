@@ -14,8 +14,8 @@ const Menu = BurgerMenu.bubble;
 const buildMenu = () => (
   headings
     .en
-    .map((item) => (
-      <a className='menu-item' href={'/' + item.heading.toLowerCase().replace(/ /g,'')}>
+    .map((item, index) => (
+      <a key={index} className='menu-item' href={'/' + item.heading.toLowerCase().replace(/ /g,'')}>
         { item.heading }
       </a>
     ))
