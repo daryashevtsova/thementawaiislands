@@ -11,7 +11,7 @@ export default ({children}) => (
     title={
       <span>
         <a href='/'>
-          <img src={logo} style={{width: '100%'}} role='presentation' />
+          <img src={logo} role='presentation' />
         </a>
       </span>
     }

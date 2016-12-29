@@ -14,7 +14,7 @@ a {
 }
 
 /* experimental scrolling fix */
-.mdl-layout {
+/*.mdl-layout {
     overflow: visible;
 }
 .mdl-layout__drawer {
@@ -33,5 +33,5 @@ a {
 }
 .mdl-layout__obfuscator {
     position: fixed;
-}
+}*/
 /* ------------------------- */

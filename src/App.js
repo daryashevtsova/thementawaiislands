@@ -1,4 +1,4 @@
-/* styles (loaded first to prevent overrides) */
+/* styles (loaded first to allow overrides) */
 import 'react-mdl/extra/material.css';
 import './App.css';
 

@@ -1,0 +1,52 @@
+/* common styles */
+.bm-overlay {
+  display: none;
+}
+
+/* mobile styles */
+@media screen and (max-width: 700px) {
+  .bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+  }
+  .bm-menu-wrap {
+    top: 70px;
+    width: 100% !important;
+  }
+  .bm-burger-bars {
+    background: #5e5e5e;
+    opacity: 1 !important;
+    border-radius: 9px;
+  }
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  .bm-menu {
+    width: 100%;
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  .menu-item {
+    color: white;
+    text-align: center;
+    border: 1px solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+}
+
+/* large screen styles */
+@media screen and (min-width: 700px) {
+  .bm-burger-button {
+    display: none;
+  }
+  .bm-menu-wrap {
+    display: none;
+  }
+}

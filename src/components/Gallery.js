@@ -17,9 +17,10 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 
 const buildImages = () => {
   const IMAGES = [i1, i2, i3, i4, i5];
-  const selectedImages = IMAGES.map(
-    (image) => ({ original: image })
-  );
+  const selectedImages =
+    IMAGES.map(
+      (image) => ({ original: image })
+    );
   selectedImages.push({ renderItem: renderVideo });
   return selectedImages;
 };

@@ -2,14 +2,27 @@
 .mdl-layout__header {
   box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 5px 0px;
   border-bottom: 1px solid #dce0e0;
+  background-color: white;
+}
+.mdl-layout-title {
+  width: 150px;
+}
+.mdl-layout-title img {
+  width: 100%;
 }
 
 /* mobile styles */
 @media screen and (max-width: 700px) {
+  .mdl-layout-title {
+    width: 170px;
+  }
   .mdl-layout__header-row {
     height: 70px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .mdl-layout__header-row .mdl-navigation {
+    display: none;
   }
 }
 
