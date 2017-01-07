@@ -13,9 +13,9 @@ export default () => (
       <div className='statement-text'>
         Surf.
         <br />
-        Mentawai Islands.
-        <br />
         Perfection.
+        <br />
+        Mentawai Islands.
       </div>
       <div className='statement-text' />
       <div className='statement-text' />
