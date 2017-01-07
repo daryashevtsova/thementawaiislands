@@ -1,40 +1,33 @@
 /* styles (loaded first to allow overrides) */
-import 'react-mdl/extra/material.css';
 import './App.css';
-
-/* static assets */
-import 'react-mdl/extra/material.js';
 
 /* libraries */
 import React from 'react';
 
-/* community components */
-import { Layout, Content } from 'react-mdl';
-
 /* project components */
-import Menu from './components/Menu';
-import MobileMenu from './components/MobileMenu';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import Gallery from './components/Gallery';
+import Menu from './components/Menu';
 
 const App = React.createClass({
   render() {
     return (
-      <div>
-        <Layout fixedHeader>
-          <Header>
-            <Menu />
-            <MobileMenu />
-          </Header>
-          <Content>
-            <Gallery />
-            <div className='content'>
-              content
-            </div>
-            <Footer />
-          </Content>
-        </Layout>
+      <div className='app-wrapper'>
+        <div className='landing-block' />
+        <Header>
+          <Menu />
+        </Header>
+        <div className='content'>
+          CONTENT 1
+        </div>
+        <div className='content dark'>
+          CONTENT 2
+        </div>
+        <div className='content dark'>
+          CONTENT 3
+        </div>
+        <div className='content'>
+          CONTENT 4
+        </div>
       </div>
     );
   }

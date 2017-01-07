@@ -1,9 +1,14 @@
-body {
+html, body, div {
+  position: relative;
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  box-sizing: border-box;
+
   color: rgb(72, 72, 72);
   -webkit-font-smoothing: antialiased;
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
@@ -13,25 +18,6 @@ a {
   font-size: 12px;
 }
 
-/* experimental scrolling fix */
-/*.mdl-layout {
-    overflow: visible;
+#root {
+  height: 100%;
 }
-.mdl-layout__drawer {
-    position: fixed;
-}
-.mdl-layout__content {
-    display: block;
-    overflow: visible;
-    margin-top: 64px;
-}
-.is-small-screen .mdl-layout__content {
-    margin-top: 56px;
-}
-.mdl-layout__header {
-    position: fixed;
-}
-.mdl-layout__obfuscator {
-    position: fixed;
-}*/
-/* ------------------------- */
