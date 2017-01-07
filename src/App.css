@@ -3,8 +3,12 @@
   height: 100%;
 }
 .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   border: 10px solid gray;
+  font-size: 100px;
 }
 .dark {
   background: grey;
