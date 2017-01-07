@@ -7,12 +7,13 @@ import React from 'react';
 /* project components */
 import Header from './components/Header';
 import Menu from './components/Menu';
+import Banner from './components/Banner';
 
 const App = React.createClass({
   render() {
     return (
       <div className='app-wrapper'>
-        <div className='landing-block' />
+        <Banner />
         <Header>
           <Menu />
         </Header>
@@ -22,10 +23,10 @@ const App = React.createClass({
         <div className='content dark'>
           CONTENT 2
         </div>
-        <div className='content dark'>
+        <div className='content'>
           CONTENT 3
         </div>
-        <div className='content'>
+        <div className='content dark'>
           CONTENT 4
         </div>
       </div>

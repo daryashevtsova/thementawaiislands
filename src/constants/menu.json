@@ -1,6 +1,6 @@
 {
 	"en": [{
-		"heading": "CAMP FEATURES",
+		"heading": "About",
 		"items": [
 			"Accommodation",
 			"Bar",
@@ -12,7 +12,7 @@
 			"Internet"
 		]
 	}, {
-		"heading": "THE SURF",
+		"heading": "Surf-Package",
 		"items": [
 			"Surf Spots",
 			"A Typical Surf Day",
@@ -21,7 +21,7 @@
 			"Crowd Factor"
 		]
 	}, {
-		"heading": "ABOUT MATUNGOU",
+		"heading": "Gallery",
 		"items": [
 			"Our Story",
 			"Your Hosts",
@@ -34,7 +34,7 @@
 			"Friends & Associates"
 		]
 	}, {
-		"heading": "FULL FRAME",
+		"heading": "Logistics",
 		"items": [
 			"The Highlights",
 			"Accommodation",
@@ -44,7 +44,7 @@
 			"Cinema"
 		]
 	}, {
-		"heading": "TRAVEL INFO",
+		"heading": "Press",
 		"items": [
 			"Getting here",
 			"Transfer Package",
@@ -55,17 +55,7 @@
 			"What to Bring"
 		]
 	}, {
-		"heading": "RATES",
-		"items": [
-			"2017 Rates",
-			"Offers",
-			"The Package",
-			"Payment Options",
-			"Our Flexible Deposit system",
-			"Bar Tab & Tips"
-		]
-	}, {
-		"heading": "RESERVE YOUR DATES",
+		"heading": "Check Availability",
 		"items": [
 			"Check Availability",
       "Book Now"

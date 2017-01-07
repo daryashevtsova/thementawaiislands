@@ -14,7 +14,7 @@ export default () => (
         id={menu.heading}
         key={index}
       >
-        {menu.heading}
+        {menu.heading.toUpperCase()}
       </a>
     ))
   }

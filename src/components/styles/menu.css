@@ -8,12 +8,13 @@
   height: 100%;
   color: white;
   border: 0px solid white;
-  line-height: 60px;
+  line-height: 80px;
   text-align: center;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 9px;
+  padding-left: 9px;
   font-weight: bold;
 }
 .header-menu-item:hover {
   background-color: pink;
+  transition-duration: 0.5s;
 }

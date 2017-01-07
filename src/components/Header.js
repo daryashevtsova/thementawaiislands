@@ -5,7 +5,7 @@ import './styles/header.css';
 import logo from '../../assets/images/logo.svg';
 
 export default ({children}) => (
-  <div>
+  <div className='header-wrapper'>
     <div className='header-dark' />
     <div className='header'>
       <div className='header-container'>
