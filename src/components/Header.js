@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/header.css';
 
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/square-logo.svg';
 
 export default ({children}) => (
   <div className='header-wrapper'>
