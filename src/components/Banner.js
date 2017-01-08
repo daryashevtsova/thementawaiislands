@@ -17,7 +17,6 @@ export default () => (
         <span>#surf</span>
         <span>#perfection</span>
         <span>#stoked</span>
-        <span>#BRODIE GET THE HELL OUTTA HERE ¯\_(ツ)_/¯</span>
       </TypeWriter>
     </div>
   </div>

@@ -4,7 +4,20 @@ import App from './App';
 import 'normalize.css';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+import Home from './components/Home';
+import About from './components/About';
+import NotFound from './components/404';
+
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <IndexRoute component={Home} />
+      <Route path='/about' component={About} />
+    </Route>
+    <Route path='*' component={App}>
+      <IndexRoute component={NotFound} />
+    </Route>
+  </Router>
+), document.getElementById('root'));

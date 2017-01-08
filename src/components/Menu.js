@@ -1,9 +1,11 @@
 import React from 'react';
 
-import './styles/menu.css';
+import { Link } from 'react-router';
+
 import MENU_TEXT from '../constants/menu.json';
 
 import calIcon from '../../assets/images/icons/cal.png';
+import './styles/menu.css';
 
 export default () => (
   <div className='header-menu-wrapper'>
@@ -11,22 +13,22 @@ export default () => (
       MENU_TEXT
       .en
       .map((menu, index) => (
-        <a
-          className='header-menu-item'
-          href="#"
+        <Link
           id={menu.heading}
           key={index}
+          className='header-menu-item'
+          to={`/${menu.heading.toLowerCase().replace(/\s/, '')}`}
         >
           {menu.heading.toUpperCase()}
-        </a>
+        </Link>
       ))
     }
-    <a
-      className='header-menu-button'
-      href="#"
+    <Link
+      className='header-booking-button'
+      to="/booking"
     >
       <img src={calIcon} role='presentation'></img>
       CHECK AVAILABILITY
-    </a>
+    </Link>
   </div>
 );

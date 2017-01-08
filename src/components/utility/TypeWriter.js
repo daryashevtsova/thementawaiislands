@@ -52,6 +52,7 @@ export default React.createClass({
           }, 2000)
         });
     }
+
     typeWords(words, 0);
   },
 

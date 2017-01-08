@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router';
+
 import './styles/header.css';
 
 import logo from '../../assets/images/square-logo.svg';
@@ -10,9 +12,9 @@ export default ({children}) => (
     <div className='header'>
       <div className='header-container'>
         <span className='header-logo'>
-          <a href='/'>
+          <Link to='/'>
             <object data={logo} type="image/svg+xml" role='presentation' />
-          </a>
+          </Link>
         </span>
         <div>
           {children}
