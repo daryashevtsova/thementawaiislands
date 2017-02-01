@@ -15,11 +15,13 @@
   font-weight: bold;
 }
 .header-menu-item:hover {
-  background-color: #b3b3b3;
+  background-color: pink;
   transition-duration: 0.5s;
+  color: black;
 }
 .menu-item-active {
-  background-color: #b3b3b3;
+  background-color: pink;
+  color: black;
 }
 .header-booking-button {
   display: flex;
@@ -42,10 +44,11 @@
 }
 .header-booking-button:hover {
   background-color: rgba(0, 174, 230, 0.8);
+  color: black;
 }
 .header-menu-ul {
   position: absolute;
-  height: 200px;
+  height: auto;
   flex-direction: column;
   list-style: none;
   align-items: flex-start;
@@ -53,10 +56,18 @@
   margin: 0;
   margin-left: -9px;
   top: 80px;
+  color: white;
 }
 .header-menu-li {
   display: flex;
   align-items: center;
-
-  border: 1px solid gray;
+  background-color: gray;
+  height: 40px;
+  min-width: 150px;
+  padding-left: 5px;
+  color: white;
+}
+.header-menu-li:hover {
+  background-color: pink;
+  color: black;
 }

@@ -49,10 +49,11 @@ export default React.createClass({
                   display: this.state[menu.heading.toLowerCase().replace(/\s/, '')],
                 }}
               >
-                <li className='header-menu-li'>menu item 1</li>
-                <li className='header-menu-li'>menu item 2</li>
-                <li className='header-menu-li'>menu item 3</li>
-                <li className='header-menu-li'>menu item 4</li>
+                {
+                  menu.items.map((item, index) => (
+                    <li className='header-menu-li'>{item}</li>
+                  ))
+                }
               </ul>
               {menu.heading.toUpperCase()}
             </Link>
