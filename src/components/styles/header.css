@@ -9,7 +9,10 @@
   top: 0px;
   /* box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 5px 0px; */
   /* border-bottom: 1px solid #dce0e0; */
-  background-color: rgba(0, 0, 0, 0);
+  background-color: grey;
+}
+.transparent {
+  background-color: transparent;
 }
 .header-container {
   display: flex;

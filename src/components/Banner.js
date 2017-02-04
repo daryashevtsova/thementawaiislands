@@ -8,18 +8,34 @@ import './styles/banner.css';
 export default React.createClass({
 
   componentDidMount() {
+    this.props.setTransparent(true);
     window.addEventListener('scroll',
-      this.props.handleScroll
+      this.handleScroll
     );
+    console.log('added banner listener');
   },
 
   componentWillUnmount() {
     window.removeEventListener('scroll',
-      this.props.handleScroll
-    );
-    console.log('removed listener: ',
       this.handleScroll
     );
+    this.props.setTransparent(false);
+    console.log('removed banner listener');
+  },
+
+  handleScroll() {
+    let bottom = document
+      .querySelector('.banner')
+      .getBoundingClientRect()
+      .bottom;
+    if (bottom <= 80) {
+      this.props.setTransparent(false);
+      console.log('change the colour to dark');
+    };
+    if (bottom > 80) {
+      this.props.setTransparent(true);
+      console.log('change the colour to light');
+    };
   },
 
   render() {
@@ -38,6 +54,7 @@ export default React.createClass({
           </TypeWriter>
         </div>
       </div>
-    );
+    )
   }
+
 });

@@ -4,10 +4,10 @@ import Banner from './Banner';
 
 import './styles/home.css';
 
-export default (props) => (
+export default ({setTransparent}) => (
   <div className='home-wrapper'>
     <Banner
-      handleScroll={props.handleScroll}
+      setTransparent={setTransparent}
     />
     <div className='content'>
       CONTENT 1

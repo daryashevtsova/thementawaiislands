@@ -10,21 +10,29 @@ import Menu from './components/Menu';
 
 export default React.createClass({
 
-  handleScroll() {
-    console.log('window scrolled');
+  getInitialState() {
+    return {
+      transparentHeader: false
+    }
+  },
+
+  setTransparent(bool) {
+    this.setState({
+      transparentHeader: bool
+    });
   },
 
   render() {
     return (
       <div className='app-wrapper'>
-        {React.cloneElement(this.props.children, {
-          handleScroll: this.handleScroll
-        })}
-        <Header>
+        {React.cloneElement(this.props.children,
+          { setTransparent: this.setTransparent })
+        }
+        <Header transparent={this.state.transparentHeader}>
           <Menu />
         </Header>
       </div>
-    )
+    );
   }
 
 });
