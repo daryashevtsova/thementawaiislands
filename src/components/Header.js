@@ -8,7 +8,6 @@ import logo from '../../assets/images/square-logo.svg';
 
 export default ({children}) => (
   <div className='header-wrapper'>
-    <div className='header-dark' />
     <div className='header'>
       <div className='header-container'>
         <span className='header-logo'>

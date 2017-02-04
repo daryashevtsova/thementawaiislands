@@ -2,9 +2,13 @@ import React from 'react';
 
 import Banner from './Banner';
 
-export default () => (
-  <div>
-    <Banner />
+import './styles/home.css';
+
+export default (props) => (
+  <div className='home-wrapper'>
+    <Banner
+      handleScroll={props.handleScroll}
+    />
     <div className='content'>
       CONTENT 1
     </div>

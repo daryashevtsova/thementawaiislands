@@ -1,5 +1,7 @@
 html, body, div {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -20,4 +22,7 @@ a {
 
 #root {
   height: 100%;
+  width: 100%;
+  
+  border: 1px solid yellow;
 }
