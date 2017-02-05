@@ -1,4 +1,6 @@
 import React from 'react';
+import debounce from 'lodash/debounce';
+
 import TypeWriter from './utility/TypeWriter';
 
 import landingImage from '../../assets/images/landing-images/5.jpg';
@@ -6,6 +8,12 @@ import landingImage from '../../assets/images/landing-images/5.jpg';
 import './styles/banner.css';
 
 export default React.createClass({
+
+
+  componentWillMount() {
+    this.handleScroll =
+      debounce(this.handleScroll, 150);
+  },
 
   componentDidMount() {
     this.props.setTransparent(true);

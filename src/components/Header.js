@@ -8,7 +8,11 @@ import logo from '../../assets/images/square-logo.svg';
 
 export default ({children, transparent}) => (
   <div className='header-wrapper' >
-    <div className={transparent ? 'header transparent' : 'header'}>
+    <div className={
+      transparent ?
+        'header transparent white-text' :
+        'header black-text logo-invert'
+    }>
       <div className='header-container'>
         <span className='header-logo'>
           <Link to='/'>
