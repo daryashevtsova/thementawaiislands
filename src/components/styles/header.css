@@ -1,7 +1,4 @@
 /* common styles */
-svg * {
-  fill: black;
-}
 .header-wrapper {
   height: 0px;
 }
@@ -11,27 +8,28 @@ svg * {
   width: 100%;
   top: 0px;
   background-color: #ffffff;
-  transition: 1s;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 2px, rgba(0, 0, 0, 0.341176) 0px 3px 6px;
+
+  transition: 0.25s;
 }
 .transparent {
   background-color: transparent;
   color: white;
   box-shadow: none;
-  transition: 0.6s;
+  transition: 0.25s;
 }
 .white-text * {
   color: white;
-  transition: 0.6s;
+  transition: 0.25s;
 }
 .black-text * {
   color: black;
-  transition: 0.6s;
+  transition: 0.25s;
 }
 .logo-invert object {
   filter: invert(100%);
-  transition: 0.6s;
+  transition: 0.25s;
 }
 .header-container {
   display: flex;

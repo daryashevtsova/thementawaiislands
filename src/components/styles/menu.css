@@ -2,25 +2,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  color: inherit;
+  align-items: center;
 }
 .header-menu-item {
-  display: inline-block;
-  height: 100%;
   border: 0px solid white;
-  line-height: 80px;
   text-align: center;
-  padding-right: 9px;
-  padding-left: 9px;
+  padding: 9px;
   font-weight: bold;
+  transition: 0s;
 }
 .header-menu-item:hover {
-  background-color: pink;
-  transition-duration: 0.5s;
-  color: black;
+  border: 2px solid black;
+  color: inherit;
+  transition: 0s;
+  box-sizing: border-box;
+}
+.transparent .header-menu-item:hover {
+  border: 2px solid white;
+  color: inherit;
+  transition: 0s;
+  box-sizing: border-box;
 }
 .menu-item-active {
-  background-color: pink;
+  border: 2px solid black;
   color: black;
 }
 .header-booking-button {
@@ -55,7 +59,7 @@
   padding: 0;
   margin: 0;
   margin-left: -9px;
-  top: 80px;
+  top: 58px;
   color: white;
 }
 .header-menu-li {

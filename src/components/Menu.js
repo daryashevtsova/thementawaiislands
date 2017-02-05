@@ -18,46 +18,46 @@ export default React.createClass({
     };
   },
   render() {
-    return(
+    return (
       <div className='header-menu-wrapper'>
         {
           MENU_TEXT
-          .en
-          .map((menu, index) => (
-            <Link
-              id={menu.heading}
-              key={index}
-              className='header-menu-item'
-              activeClassName='menu-item-active'
-              to={`/${menu.heading.toLowerCase().replace(/\s/, '')}`}
-              onMouseOver={() => {
-                const key = menu.heading.toLowerCase().replace(/\s/, '');
-                const nextState = {};
-                nextState[key] = 'flex';
-                this.setState(nextState);
-              }}
-              onMouseLeave={() => {
-                const key = menu.heading.toLowerCase().replace(/\s/, '');
-                const nextState = {};
-                nextState[key] = 'none';
-                this.setState(nextState);
-              }}
-            >
-              <ul
-                className='header-menu-ul'
-                style={{
-                  display: this.state[menu.heading.toLowerCase().replace(/\s/, '')],
+            .en
+            .map((menu, index) => (
+              <Link
+                id={menu.heading}
+                key={index}
+                className='header-menu-item'
+                activeClassName='menu-item-active'
+                to={`/${menu.heading.toLowerCase().replace(/\s/, '')}`}
+                onMouseOver={() => {
+                  const key = menu.heading.toLowerCase().replace(/\s/, '');
+                  const nextState = {};
+                  nextState[key] = 'flex';
+                  this.setState(nextState);
+                }}
+                onMouseLeave={() => {
+                  const key = menu.heading.toLowerCase().replace(/\s/, '');
+                  const nextState = {};
+                  nextState[key] = 'none';
+                  this.setState(nextState);
                 }}
               >
-                {
-                  menu.items.map((item, index) => (
-                    <li className='header-menu-li'>{item}</li>
-                  ))
-                }
-              </ul>
-              {menu.heading.toUpperCase()}
-            </Link>
-          ))
+                <ul
+                  className='header-menu-ul'
+                  style={{
+                    display: this.state[menu.heading.toLowerCase().replace(/\s/, '')],
+                  }}
+                >
+                  {
+                    menu.items.map((item, index) => (
+                      <li className='header-menu-li'>{item}</li>
+                    ))
+                  }
+                </ul>
+                {menu.heading.toUpperCase()}
+              </Link>
+            ))
         }
         <Link
           className='header-booking-button'
