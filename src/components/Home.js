@@ -2,6 +2,8 @@ import React from 'react';
 
 import Banner from './Banner';
 
+import wave from '../../assets/images/home/wave_collage.jpg';
+
 import './styles/home.css';
 
 export default ({setTransparent}) => (
@@ -10,7 +12,21 @@ export default ({setTransparent}) => (
       setTransparent={setTransparent}
     />
     <div className='content'>
-      CONTENT 1
+      <div
+        className='wave'
+        style={{ backgroundImage: `url(${wave})` }}
+      />
+      <div className='wave-text'>
+        <h1>
+          AFFORDABLE ACCOMMODATION,
+        </h1>
+        <h1>
+          IN TROPICAL ISLAND SURF PARADISE
+        </h1>
+        <h2>
+          - MATUNGOU, THE MENTAWAI ISLANDS
+        </h2>
+      </div>
     </div>
     <div className='content dark'>
       CONTENT 2
