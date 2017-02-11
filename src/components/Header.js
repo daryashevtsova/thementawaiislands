@@ -19,7 +19,7 @@ export default ({children, transparent}) => (
             <object data={logo} type="image/svg+xml" role='presentation' />
           </Link>
         </span>
-        <div>
+        <div className='header-menu-container'>
           {children}
         </div>
       </div>

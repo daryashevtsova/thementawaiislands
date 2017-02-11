@@ -7,13 +7,14 @@ import React from 'react';
 /* project components */
 import Header from './components/Header';
 import Menu from './components/Menu';
+import MobileMenu from './components/MobileMenu';
 
 export default React.createClass({
 
   getInitialState() {
     return {
       transparentHeader: false
-    }
+    };
   },
 
   setTransparent(bool) {
@@ -30,6 +31,7 @@ export default React.createClass({
         }
         <Header transparent={this.state.transparentHeader}>
           <Menu />
+          <MobileMenu />
         </Header>
       </div>
     );

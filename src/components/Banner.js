@@ -1,5 +1,6 @@
 import React from 'react';
 import debounce from 'lodash/debounce';
+// import throttle from 'lodash/throttle';
 
 import TypeWriter from './utility/TypeWriter';
 
@@ -8,7 +9,6 @@ import landingImage from '../../assets/images/landing-images/5.jpg';
 import './styles/banner.css';
 
 export default React.createClass({
-
 
   componentWillMount() {
     this.handleScroll =

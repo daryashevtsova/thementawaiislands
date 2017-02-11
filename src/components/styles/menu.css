@@ -1,26 +1,25 @@
-.header-menu-wrapper {
+.header-menu-wrapper, .header-menu-container{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 }
 .header-menu-item {
-  border: 0px solid white;
+  border: 2px solid transparent;
   text-align: center;
   padding: 9px;
   font-weight: bold;
-  transition: 0s;
+  transition: 0.5s;
 }
 .header-menu-item:hover {
   border: 2px solid black;
   color: inherit;
-  transition: 0s;
-  box-sizing: border-box;
+  transition: 0.5s;
 }
 .transparent .header-menu-item:hover {
   border: 2px solid white;
   color: inherit;
-  transition: 0s;
+  transition: 0.5s;
   box-sizing: border-box;
 }
 .menu-item-active {
@@ -74,4 +73,11 @@
 .header-menu-li:hover {
   background-color: pink;
   color: black;
+}
+
+/* mobile styles */
+@media screen and (max-width: 1024px) {
+  .header-menu-wrapper {
+    display: none;
+  }
 }

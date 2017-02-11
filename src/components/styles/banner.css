@@ -36,3 +36,10 @@
   padding-right: 10%;
   padding-top: 10%;
 }
+
+/* mobile styles */
+@media screen and (max-width: 1024px) {
+  .banner-statement {
+    top: 100px;
+  }
+}
