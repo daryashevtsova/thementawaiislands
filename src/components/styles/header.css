@@ -11,6 +11,7 @@
   color: black;
   box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 2px, rgba(0, 0, 0, 0.341176) 0px 3px 6px;
 
+  z-index: 100;
   transition: 0.25s;
 }
 .transparent {

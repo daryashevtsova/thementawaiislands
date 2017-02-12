@@ -8,6 +8,7 @@
   border: 2px solid transparent;
   text-align: center;
   padding: 9px;
+  padding-bottom: 5px;
   font-weight: bold;
   transition: 0.5s;
 }

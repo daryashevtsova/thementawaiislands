@@ -16,7 +16,7 @@
 }
 
 .dark-1 {
-  background: #7da1af;
+  background: #3f80c3;
 }
 
 .dark-2 {
@@ -83,8 +83,9 @@
   flex: 1 1 100%;
   flex-direction: row;
   align-items: center;
+  padding-right: 20px;
 
-  border: 4px double black;
+  /* border: 4px double black; */
 }
 
 .trip-pic {
@@ -94,15 +95,15 @@
   background-position: center center;
   background-origin: content-box;
 
-  padding: 15px;
+  padding: 30px;
 
   border: 0px solid green;
 }
 
-.kandui {
+.kandui-txt {
   /*font-size: 1.2rem; */
   font-weight: 800;
-  color: rgb(0, 174, 230);
+  color: #00aee6;
 
   animation: blinker 1s linear infinite;
 }

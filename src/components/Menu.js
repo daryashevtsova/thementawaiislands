@@ -11,7 +11,7 @@ export default React.createClass({
   getInitialState() {
     return {
       'about': 'none',
-      'surf-package': 'none',
+      'trip-package': 'none',
       'gallery': 'none',
       'logistics': 'none',
       'press': 'none'

@@ -104,7 +104,7 @@ export default ({setTransparent}) => (
             className='trip-pic'
             style={{ backgroundImage: `url(${wave})` }}
           />
-          <p><b>Waves </b><br /><br />Playgrounds, Northern Mentawai - 20+ waves within 30 minutes<br /><span className='kandui'>No Kandui</span>, Rifles, Bankvaults, Ebay are a few local big names</p>
+          <p><b>Waves </b><br /><br />Playgrounds, Northern Mentawai - 20+ waves within 30 minutes. <span className='kandui-txt'>No Kandui</span>, Rifles, Bankvaults, Ebay are a few local big names</p>
         </div>
         <div className='trip-desc'>
           <div
