@@ -15,8 +15,8 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
-      <Route path='about' component={About} />
-      <Route path='gallery' component={Gallery} />
+      <Route path='/about' component={About} />
+      <Route path='/gallery' component={Gallery} />
     </Route>
     <Route path='*' component={App}>
       <IndexRoute component={NotFound} />
