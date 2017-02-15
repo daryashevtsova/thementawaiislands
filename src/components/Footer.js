@@ -11,6 +11,7 @@ export default () => (
                     <ul className="contact-icons">
                         <li class="icon fa-home">
                             <a href="#">
+                                <i class="fa fa-home" aria-hidden="true"></i>
                                 Matungou Dusun torolaggo<br />Desa Katurei Kecamatan, Siberut barat daya<br />25393
                             </a>
                         </li>
@@ -45,19 +46,17 @@ export default () => (
                     </ul>
                 </div>
                 <div className='contact-form'>
-                    <form action="#" method="post">
+                    <form action="https://442kh5iuch.execute-api.eu-west-1.amazonaws.com/latest" method="post">
                         <h2>Email Us</h2>
-                        <div class="field half first">
-                            <input name="name" id="name" placeholder="Name" type="text" />
+                        <div className='form-name-email'>
+                            <input name='name' id='name' placeholder='Name' type='text' />
+                            <input name='email' id='email' placeholder='Email' type='email' />
                         </div>
-                        <div class="field half">
-                            <input name="email" id="email" placeholder="Email" type="email" />
+                        <div class='form-text'>
+                            <textarea name='message' id='message' rows='6' placeholder='Message'></textarea>
                         </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li><input value="Send Message" className='button' type="submit" /></li>
+                        <ul class='form-actions'>
+                            <li><input value='SEND MESSAGE' className='button' type='submit' /></li>
                         </ul>
                     </form>
                 </div>

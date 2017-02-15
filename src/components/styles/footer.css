@@ -12,25 +12,14 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
 
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 .footer-content {
   flex-direction: row;
+  margin-top: 40px;
   
-  border: 1px solid red;
-}
-
-.copyright {
-  flex: 0 1 10%;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  border: 1px solid white;
+  border: 0px solid red;
 }
 
 .contact-info {
@@ -48,7 +37,19 @@ footer {
   flex: 1 1 100%;
 
   color: white;
-  border: 1px solid yellow;
+  border: 0px solid yellow;
+}
+
+.copyright {
+  flex: 0 1 10%;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  border: 0px solid white;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .copyright p { 
@@ -57,14 +58,41 @@ footer {
 }
 
 /* contact form */
-.button {
+
+.contact-form input, textarea {
+  background: transparent;
+  flex: 1 1 100%;
+  border: 1px solid #a3c2e2;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 5px;
+  font-weight: 200;
+  color: white;
+}
+
+.contact-form .form-name-email {
+  flex-direction: row;
+
+}
+
+.footer-content ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2px;
+  cursor: default;
+  list-style: none;
+}
+
+.contact-form .button {
   background-color: transparent;
   color: white;
   border: 4px double #a3c2e2;
+  border-radius: 0;
   padding: 10px;
+  margin-top: 20px;
 }
 
-ul {
-  cursor: default;
-  list-style: none;
+.footer-content h2 {
+  margin: 5px;
+  margin-bottom: 20px;
 }

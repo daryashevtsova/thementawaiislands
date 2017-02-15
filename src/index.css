@@ -23,7 +23,7 @@ a {
   font-family: Circular;
   src: url(../assets/fonts/Futura-Light.woff);
 }
-input, * {
+input, textarea, * {
   font-family: Circular;
 }
 
