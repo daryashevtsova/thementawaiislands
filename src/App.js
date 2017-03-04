@@ -13,7 +13,8 @@ export default React.createClass({
 
   getInitialState() {
     return {
-      transparentHeader: false
+      transparentHeader: false,
+      isMenuOpen: false
     };
   },
 
@@ -21,6 +22,12 @@ export default React.createClass({
     this.setState({
       transparentHeader: bool
     });
+  },
+
+  toggleMobileMenu(state) {
+    this.setState({
+      isMenuOpen: state.isOpen
+    })
   },
 
   render() {
@@ -31,7 +38,10 @@ export default React.createClass({
         }
         <Header transparent={this.state.transparentHeader}>
           <Menu />
-          <MobileMenu />
+          <MobileMenu
+            isOpen={this.state.isMenuOpen}
+            handleStateChange={this.toggleMobileMenu}
+          />
         </Header>
       </div>
     );

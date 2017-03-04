@@ -55,7 +55,7 @@ export default () => (
                         <div class='form-text'>
                             <textarea name='message' id='message' rows='6' placeholder='Message'></textarea>
                         </div>
-                        <ul class='form-actions'>
+                        <ul className='form-actions'>
                             <li><input value='SEND MESSAGE' className='button' type='submit' /></li>
                         </ul>
                     </form>

@@ -1,8 +1,11 @@
-## initial draft of Matungou site
+## Matungou Surf Retreat - The Mentawai Islands
 
-##TODO
-[x] - mobile media query (hide headings)
-[ ] - mobile media query (show menu button)
-[x] - understand css structure
-[ ] - modularise app
-[ ] - where are carousel buttons pulled from?
+###About
+A marketing and booking app for the company.  
+Development site at https://www.mentawaiislands.tk  
+  
+###Technology
+- Single-page web-app (SPA) following JAM stack principles (Javascript, APIs & Markup)  
+- Written using React, bootstrapped with create-react-app  
+- Static assets hosted on Netlify's CDN  
+- APIs built using a microservice & serverless architecture with hosting on AWS Lambda  
