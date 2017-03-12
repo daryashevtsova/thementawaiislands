@@ -3,61 +3,37 @@
 		{
 			"heading": "About",
 			"items": [
-				"Accommodation",
-				"Bar",
-				"The Boats",
-				"Our Beach",
-				"‘Coconuts’ Tree House",
-				"The Food",
-				"Other Activities",
-				"Internet"
-			]
-		},
-		{
-			"heading": "Trip-Package",
-			"items": [
-				"Surf Spots",
-				"A Typical Surf Day",
-				"Surfboard Info",
-				"Our Beach",
-				"Crowd Factor"
-			]
-		},
-		{
-			"heading": "Gallery",
-			"items": [
-				"Our Story",
-				"Your Hosts",
-				"A Typical Day",
-				"Our Location",
-				"Tsunami Safety",
-				"Sustainability Strategy",
-				"Island Life - The Reality",
-				"The Climate",
-				"Friends & Associates"
+				"1",
+				"2",
+				"3",
+				"4"
 			]
 		},
 		{
 			"heading": "Logistics",
 			"items": [
-				"The Highlights",
-				"Accommodation",
-				"Scenes",
-				"Island Life",
-				"Surf",
-				"Cinema"
+				"5",
+				"6",
+				"7",
+				"8"
+			]
+		},
+		{
+			"heading": "Gallery",
+			"items": [
+				"9",
+				"10",
+				"11",
+				"12"
 			]
 		},
 		{
 			"heading": "Press",
 			"items": [
-				"Getting here",
-				"Transfer Package",
-				"Private Transfer",
-				"Arrival/Departure Days",
-				"Flights Info",
-				"Ferry Schedule",
-				"What to Bring"
+				"13",
+				"14",
+				"15",
+				"16"
 			]
 		}
 	]
