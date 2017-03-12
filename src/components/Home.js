@@ -1,9 +1,11 @@
+/* libraries */
 import React from 'react';
 
+/* project components */
 import Banner from './Banner';
 import Footer from './Footer';
 
-// images
+/* images */
 import wave_collage from '../../assets/images/home/wave_collage.jpg';
 import trip from '../../assets/images/home/trip.jpg';
 import group from '../../assets/images/pictograms/group.png';
@@ -17,9 +19,11 @@ import ability from '../../assets/images/pictograms/ability.png';
 import suited from '../../assets/images/pictograms/suited.png';
 import line from '../../assets/images/pictograms/line.png';
 
+/* styles */
 import './styles/home.css';
 
-export default ({setTransparent}) => (
+
+export default ({ setTransparent }) => (
   <div className='home-wrapper'>
 
     <Banner
@@ -27,102 +31,100 @@ export default ({setTransparent}) => (
     />
 
     <div className='content'>
-
       <div
         className='wave'
         style={{ backgroundImage: `url(${wave_collage})` }}
-      />
-
-      <div className='wave-text'>
-        <h1>
-          AFFORDABLE ACCOMMODATION,
+      >
+        <div className='wave-text'>
+          <h1>
+            AFFORDABLE ACCOMMODATION,
         </h1>
-        <h1>
-          IN TROPICAL ISLAND SURF PARADISE
+          <h1>
+            IN TROPICAL ISLAND SURF PARADISE
         </h1>
-        <h2>
-          - MATUNGOU, THE MENTAWAI ISLANDS
+          <h2>
+            - MATUNGOU, THE MENTAWAI ISLANDS
         </h2>
+        </div>
       </div>
-
     </div>
 
-    <div className='content flex-row md-l'>
+    <div className='content medium'>
       <div
-        className='trip-img'
+        className='facts-img'
         style={{ backgroundImage: `url(${trip})` }}
       />
-      <div className='trip-content'>
+      <div className='facts-column'>
 
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${group})` }}
           />
           <p><b>Camp Size </b><br /><br />Max 8 Guests</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${destination})` }}
           />
           <p><b>Destination </b><br /><br />Northern Mentawai Islands, Indonesia</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${airport})` }}
           />
           <p><b>Airport </b><br /><br />Padang Minangkabau International , Western Sumatra</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${accommodation})` }}
           />
           <p><b>Accommodation </b><br /><br />Private Beachside Bungalows - 2/3 person</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${meals})` }}
           />
           <p><b>Meals: </b><br /><br />Breakfast, lunch and Dinner Included, Indonesian Style</p>
         </div>
       </div>
 
-      <div className='trip-content'>
-        <div className='trip-desc'>
+      <div className='facts-column invisible'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${surf})` }}
           />
           <p><b>Surf Access </b><br /><br />Private daily surf boat and Guide (just you and your crew)</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${wave})` }}
           />
           <p><b>Waves </b><br /><br />Playgrounds, Northern Mentawai - 20+ waves within 30 minutes. <span className='kandui-txt'>No Kandui</span>, Rifles, Bankvaults, Ebay are a few local big names</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${ability})` }}
           />
           <p><b>Surf Ability </b><br /><br />Intermediate to Professional</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${suited})` }}
           />
           <p><b>Best Suited For </b><br /><br />Medium-Budget travellers, Couples, Groups & Families</p>
         </div>
-        <div className='trip-desc'>
+        <div className='facts-item'>
           <div
-            className='trip-pic'
+            className='facts-pic'
             style={{ backgroundImage: `url(${line})` }}
           />
           <p><b>Bottom-line </b><br /><br />Unbeatable value if you wish to experience a premium surf location without the commonly nauseating price-tag</p>
@@ -131,15 +133,8 @@ export default ({setTransparent}) => (
 
     </div>
 
-    <div className='content'>
-      CONTENT 3
-    </div>
 
-    <div className='content md dark-2'>
-      CONTENT 4
-    </div>
-
-    <Footer />
+    {/*<Footer />*/}
 
   </div>
 );

@@ -1,43 +1,8 @@
 /* common styles */
 .app-wrapper {
-  height: 100%;
-  width: 100%;
-
-  /* border: 10px solid red; */
-}
-
-.flex-33 {
-  flex: 0 0 33%;
-
-  border: 1px solid red;
-}
-
-.flex-50 {
-  flex: 0 0 50%;
-
-  border: 1px solid red;
-}
-
-.flex-100 {
-  flex: 0 0 100%;
-
-  border: 1px solid red;
-}
-
-.flex-column {
+  display: flex;
   flex-direction: column;
-}
+  flex: 1;
 
-.flex-row {
-  flex-direction : row;
-}
-
-/* mobile styles */
-@media screen and (max-width: 700px) {
-
-}
-
-/* large screen styles */
-@media screen and (min-width: 700px) {
-
+  border: 0px solid yellow; 
 }

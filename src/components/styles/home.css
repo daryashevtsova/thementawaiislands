@@ -1,17 +1,27 @@
 .home-wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1;
 
-  /* border: 20px solid green; */
+  border: 0px solid green; 
 }
 .content {
   display: flex;
-  flex: 0 0 100%;
   flex-direction: row;
+  flex: 1 0 100%;
   align-items: center;
   justify-content: center;
 
-  /* border: 10px solid gray; */
+  z-index: 100;
+
+  border: 5px solid yellow; 
+}
+
+.medium {
+  flex: 1 0 75%;
+}
+.auto {
+  flex: 1 0 auto;
 }
 
 .dark-1 {
@@ -23,29 +33,37 @@
 }
 
 .md-l {
-  flex: 0 0 75%;
+  flex: 0 0 75vh;
 }
 
 .md {
-  flex: 1 0 50%;
+  flex: 1 0 50vh;
 }
 
 .sm {
-  flex: 0 0 25%;
+  flex: 0 0 25vh;
 }
 
 .test-brd {
   border: 1px solid red;
 }
 
+/* wave block */
 .content .wave {
-  flex: 0 0 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
 
   border-bottom: 4rem solid white;
   border-top: 4rem solid white;
+
+  border: 5px solid black;
 }
 
 .content .wave-text {
@@ -61,43 +79,49 @@
 
   border: 0px solid green;
 }
+/* --- end ---*/
 
-.trip-img {
+/* key facts section */
+.facts-img {
   flex: 0 0 25%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
 
-  border: 0px solid black;
+  border: 1px solid black;
 }
-
-.trip-content {
+.facts-column {
   flex: 1 1 100%;
   flex-direction: column;
 
-  border: 0px solid red;
+  border: 5px solid red;
 }
 
-.trip-desc {
+.facts-item {
   flex: 1 1 100%;
   flex-direction: row;
   align-items: center;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
 
-  /* border: 4px double black; */
+  border: 4px double black; 
 }
 
-.trip-pic {
-  flex: 0 0 25%;
+.facts-pic {
+  flex: 1 1 25%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   background-origin: content-box;
-  min-width: 100px;
+  /*min-width: 100px;*/
 
-  padding: 30px;
+  /*padding: 30px;*/
 
-  border: 0px solid green;
+  border: 5px solid green;
+}
+
+.facts-item p {
+  border: 5px solid purple;
 }
 
 .kandui-txt {
@@ -115,4 +139,21 @@
 .content h1 {
   padding: 0;
   margin: 0;
+}
+
+/* small screen styles */
+@media screen and (max-width: 1000px) {
+  .trip-img {
+    display: none;
+  }
+
+  .content.flex-row {
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    border: 1px solid pink;
+  }
+  .content .trip-content {
+    flex: 1 0 auto;
+  }
 }

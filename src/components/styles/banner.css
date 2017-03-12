@@ -1,16 +1,17 @@
 .banner {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  flex: 0 0 100%;
-  border: 0px solid black;
+  min-height: 100%;
+
   background-color: gray;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+
+  border: 5px solid black;
 }
 .banner-statement {
   position: fixed;
@@ -29,9 +30,14 @@
   font-size: 3.5rem;
 }
 
-/* mobile styles */
-@media screen and (max-width: 1024px) {
+/* small screens */
+@media screen and (max-width: 800px) {
   .banner-statement {
     top: 100px;
+    font-size: 2rem;
+  }
+  .typewriter {
+    padding-top: 20px;
+    font-size: 1.8rem;
   }
 }
