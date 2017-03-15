@@ -31,16 +31,16 @@ export default React.createClass({
                 activeClassName='menu-item-active'
                 to={`/${menu.heading.toLowerCase().replace(/\s/, '')}`}
                 onMouseOver={() => {
-                  {/*const key = menu.heading.toLowerCase().replace(/\s/, '');
+                  /*const key = menu.heading.toLowerCase().replace(/\s/, '');
                   const nextState = {};
                   nextState[key] = 'flex';
-                  this.setState(nextState);*/}
+                  this.setState(nextState);*/
                 }}
                 onMouseLeave={() => {
-                  {/*const key = menu.heading.toLowerCase().replace(/\s/, '');
+                  /*const key = menu.heading.toLowerCase().replace(/\s/, '');
                   const nextState = {};
                   nextState[key] = 'none';
-                  this.setState(nextState);*/}
+                  this.setState(nextState);*/
                 }}
               >
                 <ul

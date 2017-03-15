@@ -5,6 +5,7 @@ import Footer from './Footer';
 
 // images
 import wave_collage from '../../assets/images/home/wave_collage.jpg';
+import packegesImg from '../../assets/images/home/Matungou_Brochure_2017-6.jpg';
 import trip from '../../assets/images/home/trip.jpg';
 import group from '../../assets/images/pictograms/group.png';
 import destination from '../../assets/images/pictograms/destination.png';
@@ -26,28 +27,30 @@ export default ({setTransparent}) => (
       setTransparent={setTransparent}
     />
 
-    <div className='content'>
 
-      <div
-        className='wave'
-        style={{ backgroundImage: `url(${wave_collage})` }}
-      />
+    <div className='content-wave'>
 
-      <div className='wave-text'>
-        <h1>
-          AFFORDABLE ACCOMMODATION,
-        </h1>
-        <h1>
-          IN TROPICAL ISLAND SURF PARADISE
-        </h1>
-        <h2>
-          - MATUNGOU, THE MENTAWAI ISLANDS
-        </h2>
-      </div>
+        <div className='wave-text'>
+          <h1>
+            AFFORDABLE ACCOMMODATION,
+          </h1>
+          <h1>
+            IN TROPICAL ISLAND SURF PARADISE
+          </h1>
+          <h2>
+            - MATUNGOU, THE MENTAWAI ISLANDS
+          </h2>
+        </div>
+
+        <div
+            className='wave'
+            style={{ backgroundImage: `url(${wave_collage})` }}
+        />
 
     </div>
 
-    <div className='content flex-row md-l'>
+
+    <div className='content-surf'>
       <div
         className='trip-img'
         style={{ backgroundImage: `url(${trip})` }}
@@ -131,13 +134,51 @@ export default ({setTransparent}) => (
 
     </div>
 
-    <div className='content'>
-      CONTENT 3
+
+
+    <div className='content-packages'>
+
+      <div className='content-packages-body'>
+        <h1 className="packages-main-title">PACKAGES</h1>
+        <h2 className="packages-title">Prices starting from $125 per person per day (all inclusive)</h2>
+        <h2 className="packages-title">Included in ALL Packages:</h2>
+        <p> Price includes pick-up / drop-off from Siberut <b>(If you wish to travel via Tua Pejat there will be an additional charge of $150 for each pick-up / drop-off per group)</b></p>
+        <ul>
+          <li>1 x Private speed boat per group for daily use - 2 trips daily</li>
+          <li>1 x Beach Front Bungalows with large fans in each bungalow</li>
+          <li>Western style bathroom</li>
+          <li>3 X Meals per day (Breakfast / Lunch / Dinner)</li>
+          <li>Omelettes and Noodles whenever you wish!</li>
+          <li>Drinking Water, Tea, Coffee</li>
+        </ul>
+        <h2 className="packages-title">Not Included:</h2>
+        <p>Transfer from Airport to arrival into The Mentawai
+        Wifi - $10 USD per hour or $30 Unlimited.<br />
+        (We are sorry to charge for internet but it is extremely expensive to get internet to the island)
+          Service charge (Feel free to tip our staff directly) </p>
+        <h2 className="packages-title">Also available but not included:</h2>
+        <ul>
+          <li>Soft drinks - coke/sprite/pocari</li>
+          <li>Bintang</li>
+          <li>Clothes washing facilities</li>
+          <li>Direct Speedboat Transfer from Padang to Matungou -</li>
+          <li>See alternative Transfer options</li>
+        </ul>
+      </div>
+
+
+      <div className='content-packages-img'
+           style={{backgroundImage: `url(${packegesImg}`}}
+      />
+
     </div>
+
 
     <div className='content md dark-2'>
       CONTENT 4
     </div>
+
+
 
     <Footer />
 
