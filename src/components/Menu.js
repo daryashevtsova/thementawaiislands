@@ -17,6 +17,7 @@ export default React.createClass({
       'press': 'none'
     };
   },
+
   render() {
     return (
       <div className='header-menu-wrapper'>

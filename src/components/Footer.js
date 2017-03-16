@@ -1,69 +1,58 @@
 import React from 'react';
 
 import './styles/footer.css';
+import '../../assets/fonts/font-awesome.min.css';
+
 
 export default () => (
-    <footer className='content md dark-1'>
+    <footer className='footer'>
+
         <div className='footer-container'>
-            <div className='footer-content'>
-                <div className='contact-info'>
+                <div className='footer-contact'>
                     <h2>Contact</h2>
-                    <ul className="contact-icons">
-                        <li class="icon fa-home">
-                            <a href="#">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                                Matungou Dusun torolaggo<br />Desa Katurei Kecamatan, Siberut barat daya<br />25393
-                            </a>
+                    <ul>
+                        <li className="footer-contact-item">
+                            <i className="fa fa-home"></i>
+                            <a href="#">Matungou Dusun torolaggo<br />Desa Katurei Kecamatan, Siberut barat daya<br />25393</a>
                         </li>
-                        <li class="icon fa-phone">
+                        <li className="footer-contact-item">
+                            <i className="fa fa-phone"></i>
                             <a href="#">(000) 000-0000</a>
                         </li>
-                        <li class="icon fa-envelope-o">
+                        <li className="footer-contact-item">
+                            <i className="fa fa-envelope-o"></i>
                             <a href="#">matungou@thementawaiislands.com</a>
                         </li>
                     </ul>
-                    <ul className='icons-bordered'>
-                        <li>
-                            <a className='icon fa-facebook' href="#">
-                                <span className='label'>Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class='icon fa-twitter' href="#">
-                                <span className='label'>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class='icon fa-instagram' href="#">
-                                <span className='label'>Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class='icon fa-tripadvisor' href="#">
-                                <span class='label'>TripAdvisor</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <p className='fotter-contact-icons'>
+                            <a className='fa fa-facebook' href="#" />
+                            <a className='fa fa-twitter' href="#" />
+                            <a className='fa fa-instagram' href="#" />
+                            <a className='fa fa-tripadvisor' href="#" />
+                    </p>
                 </div>
-                <div className='contact-form'>
+
+                <div className='footer-form'>
+
                     <form action="https://442kh5iuch.execute-api.eu-west-1.amazonaws.com/latest" method="post">
                         <h2>Email Us</h2>
                         <div className='form-name-email'>
-                            <input name='name' id='name' placeholder='Name' type='text' />
-                            <input name='email' id='email' placeholder='Email' type='email' />
+                            <input className="footer-input" name='name' id='name' placeholder='Name' type='text' />
+                            <input className="footer-input" name='email' id='email' placeholder='Email' type='email' />
                         </div>
-                        <div class='form-text'>
-                            <textarea name='message' id='message' rows='6' placeholder='Message'></textarea>
+                        <div className='form-name-email'>
+                            <textarea className="footer-texterea" name='message' id='message' rows='6' placeholder='Message'></textarea>
                         </div>
-                        <ul class='form-actions'>
-                            <li><input value='SEND MESSAGE' className='button' type='submit' /></li>
-                        </ul>
+                        <input value='SEND MESSAGE' className='footer-form-button' type='submit' />
                     </form>
+
                 </div>
+
             </div>
-            <div className='copyright'>
+
+            <div className='footer-copyright'>
                 <p>&copy; Matungou. All rights reserved.</p>
             </div>
-        </div>
+
     </footer>
 );

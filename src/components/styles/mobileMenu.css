@@ -39,6 +39,7 @@
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  height: auto !important;
 }
 
 /* Styling of overlay */
@@ -46,6 +47,10 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+.menu-item {
+  font-size: 2rem;
+  line-height: 2;
+}
 /* mobile styles */
 @media screen and (max-width: 700px) {
 
@@ -57,3 +62,4 @@
     display: none;
   }
 }
+

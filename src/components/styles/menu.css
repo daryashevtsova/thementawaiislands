@@ -75,7 +75,9 @@
   background-color: pink;
   color: black;
 }
-
+.bm-menu-wrap {
+  top: 0;
+}
 /* mobile styles */
 @media screen and (max-width: 1024px) {
   .header-menu-wrapper {
