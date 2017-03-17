@@ -10,6 +10,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import NotFound from './components/404';
+import Logistics from './components/Logistics';
 
 ReactDOM.render((
   <Router history={browserHistory}>
@@ -17,9 +18,8 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path='/about' component={About} />
       <Route path='/gallery' component={Gallery} />
+      <Route path='/logistics' component={Logistics} />
     </Route>
-    <Route path='*' component={App}>
-      <IndexRoute component={NotFound} />
-    </Route>
+    <Route path='*' component={NotFound} />
   </Router>
 ), document.getElementById('root'));

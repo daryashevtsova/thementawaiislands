@@ -52,7 +52,7 @@ export default React.createClass({
                 >
                   {
                     menu.items.map((item, index) => (
-                      <li className='header-menu-li'>{item}</li>
+                      <li className='header-menu-li' key={index}>{item}</li>
                     ))
                   }
                 </ul>

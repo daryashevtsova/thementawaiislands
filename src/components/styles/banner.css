@@ -8,9 +8,8 @@
 }
 .banner-statement {
   position: fixed;
-  display: flex;
   top: 200px;
-  width: 68%;
+  line-height: 1.1;
   margin-left: 15%;
   margin-right: auto;
   color: white;

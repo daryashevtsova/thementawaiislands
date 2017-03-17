@@ -46,6 +46,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
+  margin-top: -15rem;
 }
 
 .content-wave .wave-text {
@@ -69,6 +70,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  flex: 1 0 35%;
 }
 
 .trip-desc {
@@ -78,8 +80,8 @@
 }
 
 .trip-pic {
-  flex: 0 0 10rem;
-  height: 3rem;
+  flex: 0 0 14rem;
+  height: 6rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -144,6 +146,11 @@
     display: block;
       height: auto;
   }
+}
+@media only screen and (max-width: 991px) {
+    .content-wave .wave {
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 767px) {
     .content-packages-img {
