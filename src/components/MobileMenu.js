@@ -9,7 +9,7 @@ import './styles/mobileMenu.css';
 
 /* constants */
 import headings from '../constants/menu.json';
-const Menu = BurgerMenu.bubble;
+const Menu = BurgerMenu.slide;
 
 const buildMenu = () => (
   headings

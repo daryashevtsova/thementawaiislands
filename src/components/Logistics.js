@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Footer from './Footer';
-
 import img1 from '../../assets/images/logistics_1.png';
 import img2 from '../../assets/images/logistics_2.png';
 import img3 from '../../assets/images/logistics_3.png';
@@ -168,8 +166,6 @@ export default () => (
       <div className='logistics-section' style={{display: "block"}}>
           <img src={map} alt="map" style={{width: "100%"}}/>
       </div>
-
-      <Footer />
 
   </div>
 );

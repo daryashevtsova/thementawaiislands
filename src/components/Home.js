@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Banner from './Banner';
-import Footer from './Footer';
 
 // images
 import wave_collage from '../../assets/images/home/wave_collage.jpg';
@@ -180,7 +179,7 @@ export default ({setTransparent}) => (
 
 
 
-    <Footer />
+    {/*<Footer />*/}
 
   </div>
 );

@@ -6,6 +6,7 @@ import React from 'react';
 
 /* project components */
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Menu from './components/Menu';
 import MobileMenu from './components/MobileMenu';
 
@@ -24,15 +25,20 @@ export default React.createClass({
   },
 
   render() {
+    console.log(this.props.location.pathname);
     return (
       <div className='app-wrapper'>
-        {React.cloneElement(this.props.children,
-          { setTransparent: this.setTransparent })
-        }
         <Header transparent={this.state.transparentHeader}>
           <Menu />
           <MobileMenu />
         </Header>
+
+        {React.cloneElement(this.props.children,
+            { setTransparent: this.setTransparent })
+        }
+
+          {this.props.location.pathname !== "/booking" ? <Footer /> : ""}
+
       </div>
     );
   }

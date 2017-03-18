@@ -11,6 +11,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import NotFound from './components/404';
 import Logistics from './components/Logistics';
+import Reservations from './components/reservations';
 
 ReactDOM.render((
   <Router history={browserHistory}>
@@ -19,6 +20,7 @@ ReactDOM.render((
       <Route path='/about' component={About} />
       <Route path='/gallery' component={Gallery} />
       <Route path='/logistics' component={Logistics} />
+      <Route path='/booking' component={Reservations} />
     </Route>
     <Route path='*' component={NotFound} />
   </Router>

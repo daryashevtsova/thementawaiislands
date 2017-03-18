@@ -1,57 +1,58 @@
-.footer {
-  background: #3f80c3;
-  color: #fff;
-  position: relative;
-  z-index: 2;
+.reservations {
+  /*background: #3f80c3;*/
+  /*color: #fff;*/
+  /*position: relative;*/
+  /*z-index: 2;*/
+
 }
-.footer-container {
-  display: flex;
-  max-width: 110rem;
+.reservations {
+  /*display: flex;*/
+  max-width: 80rem;
   padding: 5rem 3rem;
-  margin: 0 auto;
+  margin: 85px auto 0;
   border-bottom:1px solid rgba(255,255,255,.3);
 }
-.footer-contact {
+.reservations-contact {
   flex: 0 0 40%;
   padding-right: 3rem;
   box-sizing: border-box;
 }
-.footer-form {
-  flex: 0 0 60%;
+.reservations-form {
+  /*flex: 0 0 60%;*/
 }
-.footer-contact-item {
+.reservations-contact-item {
   display: flex;
   margin-bottom: 2rem;
 }
-.footer-contact-item>.fa {
-   margin-right: 3rem;
+.reservations-contact-item>.fa {
+  margin-right: 3rem;
   font-size: 1.7rem;
- }
-.footer-contact-item>a {
+}
+.reservations-contact-item>a {
   font-size: 1.6rem;
-  color: #fff;
+  color: #000;
 }
 
-.fotter-contact-icons{
+.reservations-contact-icons{
   display: flex;
 }
-.fotter-contact-icons>.fa {
+.reservations-contact-icons>.fa {
   transition: background-color 0.2s ease-in-out;
   border-radius: 4px;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   display: block;
   font-size: 2rem;
   height: 3.5rem;
   line-height: 3.5rem;
   text-align: center;
   width: 3.5rem;
-  color: #fff;
+  color: #000;
   margin-right: 2rem;
 }
-.fotter-contact-icons>.fa:hover {
-  background-color: rgba(255,255,255,.3);
+.reservations-contact-icons>.fa:hover {
+  background-color: rgba(0,0,0,.3);
 }
-.footer-contact>ul {
+.reservations-contact>ul {
   padding: 0;
   margin: 5rem 0;
 }
@@ -61,23 +62,23 @@
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.footer-input {
+.reservations-input {
   width: 45%;
   background: none;
   padding: 1rem;
-  border: 1px solid rgba(255,255,255,.4);
+  border: 1px solid rgba(0,0,0,.4);
   border-radius: 5px;
-  color: #fff;
+  color: #000;
 }
-.footer-texterea {
+.reservations-texterea {
   width: 100%;
   background: none;
   padding: 1rem;
-  border: 1px solid rgba(255,255,255,.4);
+  border: 1px solid rgba(0,0,0,.4);
   border-radius: 5px;
   resize: none;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #000;
   box-sizing: border-box;
 }
 .footer-input:focus,
@@ -85,22 +86,24 @@
   border: 1px solid #fff;
   outline: 0;
 }
-.footer-form-button {
+.reservations-form-button {
   padding: 1rem 2rem;
-  border: 1px solid rgba(255,255,255,.7);
-  color: #fff;
+  border: 1px solid rgba(0,0,0,.7);
+  color: #000;
   background: none;
   border-radius: 5px;
 }
-.footer-form-button:hover {
-  background-color: rgba(255,255,255,.3);
+.reservations-form-button:hover {
+  background-color: rgba(0,0,0,.3);
 }
 .footer-form h2 {
   margin-bottom: 5rem;
 }
-.footer-copyright {
+.reservations-copyright {
   text-align: center;
   padding-bottom: 1px;
+  margin-top: 7rem;
+  border-top: 1px solid rgba(0,0,0,.3);
 }
 
 @media screen and (max-width: 767px) {
@@ -116,11 +119,11 @@
   .form-name-email {
     display: block;
   }
-  .footer-input {
+  .reservations-input {
     width: 100%;
     box-sizing: border-box;
   }
-  .footer-input:first-child {
+  .reservations-input:first-child {
     margin-bottom: 2rem;
   }
 }
