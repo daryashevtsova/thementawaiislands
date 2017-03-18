@@ -1,6 +1,8 @@
 .footer {
   background: #3f80c3;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 .footer-container {
   display: flex;
@@ -76,6 +78,7 @@
   resize: none;
   margin-bottom: 2rem;
   color: #fff;
+  box-sizing: border-box;
 }
 .footer-input:focus,
 .footer-texterea:focus {
@@ -105,5 +108,18 @@
   }
   .footer-contact {
     margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-name-email {
+    display: block;
+  }
+  .footer-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .footer-input:first-child {
+    margin-bottom: 2rem;
   }
 }

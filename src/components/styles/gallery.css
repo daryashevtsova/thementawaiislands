@@ -1,13 +1,6 @@
 .gallery-wrapper {
-  all: unset;
-  flex: 0 0 100%;
   margin-top: 85px;
   z-index: 5;
-
-  border: 0px solid red;
-}
-
-#Gallery {
-  display: block;
-  height: auto;
+  display: inline-block;
+  width: 100%;
 }
