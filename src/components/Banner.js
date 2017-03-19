@@ -50,8 +50,9 @@ export default React.createClass({
     return (
       <div
         className='banner'
-        style={{ backgroundImage: `url(${landingImage})` }}
       >
+        <div className="banner-bg"
+             style={{ backgroundImage: `url(${landingImage})` }} />
         <div className='banner-statement'>
           Mentawai Islands.
           <br />

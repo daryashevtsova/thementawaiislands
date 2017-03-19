@@ -4,3 +4,6 @@
   display: inline-block;
   width: 100%;
 }
+#Gallery {
+  overflow: hidden;
+}

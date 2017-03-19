@@ -37,12 +37,14 @@
 .content-wave {
     position: relative;
     z-index: 2;
+    background-color: #fff;
 }
 .content-wave .wave {
   height: 48vw;
   max-height: 878px;
   max-width: 1920px;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -58,6 +60,7 @@
     height: 100vh;
     position: relative;
     z-index: 2;
+    background-color: #fff;
 }
 .trip-img {
   flex: 0 0 25%;
@@ -112,6 +115,7 @@
     display: flex;
     position: relative;
     z-index: 2;
+    background-color: #fff;
 }
 .content-packages-img {
     width: 50vw;
