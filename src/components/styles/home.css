@@ -145,13 +145,18 @@
 
 @media only screen and (max-width: 1023px){
   .trip-img {
-    display: none;
+      width: 40rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
   }
   .trip-content {
     height: auto;
+    margin-left: 43rem;
   }
   .content-surf {
-    display: block;
+      flex-direction: column;
       height: auto;
   }
 }
@@ -161,10 +166,27 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .content-packages {
+        flex-direction: column;
+    }
     .content-packages-img {
-        display: none;
+        width: 40rem;
+        height: 70rem;
+        margin: auto;
     }
     .content-packages-body {
         width: auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .trip-img {
+        width: 40rem;
+        height: 100rem;
+         position: static;
+        order: 3;
+        margin: auto;
+    }
+    .trip-content {
+        margin-left: 0;
     }
 }
